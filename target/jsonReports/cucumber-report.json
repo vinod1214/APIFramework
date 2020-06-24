@@ -1,0 +1,189 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Verify if User is being successfully added using AddUserAPI",
+        "description": "",
+        "id": "validating-user-api-s;verify-if-user-is-being-successfully-added-using-adduserapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1979938000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Add User Payload with \"munirathnam\" \"singiri\" \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"munirathnam\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"singiri\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"3\"",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefinition.add_User_Payload_with(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1653521900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user calls \"AddUserAPI\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddUserAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinition.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1520300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the API call got success with status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefinition.the_API_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1557792600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify user id created maps to \"munirathnam\" using \"GetUserAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"munirathnam\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"GetUserAPI\"",
+                  "offset": 51
+                }
+              ],
+              "location": "StepDefinition.verify_user_id_created_maps_to_using(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddUser"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Verify if Delete User functionality is working",
+        "description": "",
+        "id": "validating-user-api-s;verify-if-delete-user-functionality-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2921400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Delete User Payload",
+            "match": {
+              "location": "StepDefinition.delete_User_Payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 92072400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user calls \"DeleteUserAPI\" with \"DELETE\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeleteUserAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinition.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the API call get success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefinition.the_API_call_get_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeleteUser"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validating User API\u0027s",
+    "description": "",
+    "id": "validating-user-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/userValidations.feature",
+    "tags": []
+  }
+]

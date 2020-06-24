@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="5827" started-at="2020-06-20T12:21:33Z" finished-at="2020-06-20T12:21:38Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@1593948d]" name="feature" class="cucumber.Options.TestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="5827" started-at="2020-06-20T12:21:33Z" finished-at="2020-06-20T12:21:38Z">
+      <class name="cucumber.Options.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumber.Options.TestRunner@1593948d]" name="setUpClass" is-config="true" duration-ms="207" started-at="2020-06-20T12:21:33Z" finished-at="2020-06-20T12:21:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@1593948d]" name="feature" duration-ms="5422" started-at="2020-06-20T12:21:33Z" description="Runs Cucumber Feature" data-provider="scenarios" finished-at="2020-06-20T12:21:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify if User is being successfully added using AddUserAPI"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating User API's"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumber.Options.TestRunner@1593948d]" name="feature" duration-ms="96" started-at="2020-06-20T12:21:38Z" description="Runs Cucumber Feature" data-provider="scenarios" finished-at="2020-06-20T12:21:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify if Delete User functionality is working"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating User API's"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.Options.TestRunner@1593948d]" name="tearDownClass" is-config="true" duration-ms="18" started-at="2020-06-20T12:21:38Z" finished-at="2020-06-20T12:21:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="html_report()[pri:0, instance:cucumber.Options.TestRunner@1593948d]" name="html_report" is-config="true" duration-ms="3730" started-at="2020-06-20T12:21:39Z" finished-at="2020-06-20T12:21:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- html_report -->
+      </class> <!-- cucumber.Options.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

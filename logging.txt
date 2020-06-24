@@ -1,0 +1,102 @@
+Request method:	POST
+Request URI:	http://localhost:3000/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "munirathnam",
+    "lastname": "singiri",
+    "subjectId": "3"
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://localhost:3000/users/5
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+Content-Length: 88
+ETag: W/"58-y3EwnHK6G8GpyHz6XBqHH+ojuHI"
+Date: Sat, 20 Jun 2020 12:21:37 GMT
+Connection: keep-alive
+
+{
+    "firstname": "munirathnam",
+    "lastname": "singiri",
+    "subjectId": "3",
+    "id": 5
+}
+Request method:	GET
+Request URI:	http://localhost:3000/users?id=5
+Proxy:			<none>
+Request params:	<none>
+Query params:	id=5
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+Content-Length: 104
+ETag: W/"68-a++3cQPKMp4ZHimcj+0PYHI6cOg"
+Date: Sat, 20 Jun 2020 12:21:38 GMT
+Connection: keep-alive
+
+[
+    {
+        "firstname": "munirathnam",
+        "lastname": "singiri",
+        "subjectId": "3",
+        "id": 5
+    }
+]
+Request method:	DELETE
+Request URI:	http://localhost:3000/users/5
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+ETag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Date: Sat, 20 Jun 2020 12:21:38 GMT
+Connection: keep-alive
+
+{
+    
+}
